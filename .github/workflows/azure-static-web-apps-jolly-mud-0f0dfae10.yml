@@ -29,9 +29,15 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Build Vite app
-        run: npm run build
+        
+      - name: Verify installed packages
+        run: |
+          npm ls @tanstack/react-query
+          npm ls lucide-react
+          npm ls ag-grid-community
+          npm ls ag-grid-react
+            - name: Build Vite app
+              run: npm run build
 
       - name: Deploy to Azure Static Web Apps
         id: builddeploy
