@@ -17,14 +17,14 @@
     "@tanstack/react-router": "^1.99.0",
     "ag-grid-community": "^33.3.2",
     "ag-grid-react": "^33.3.2",
-    "axios": "^1.7.9",
+    "axios": "^1.18.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.468.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "react-hook-form": "^7.54.2",
-    "zod": "^3.24.1",
-    "zustand": "^5.0.3"
+    "react-hook-form": "^7.80.0",
+    "zod": "^3.25.76",
+    "zustand": "^5.0.14"
   },
   "devDependencies": {
     "@types/node": "^26.0.1",
