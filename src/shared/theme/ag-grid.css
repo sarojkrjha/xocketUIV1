@@ -1,0 +1,158 @@
+/* ========================================
+   XOCKET ENTERPRISE GRID 3.1
+   One grid skin for every workspace.
+======================================== */
+.enterprise-grid-shell {
+  width: 100%;
+  border: 1px solid var(--xocket-border-primary);
+  border-radius: var(--xocket-radius-lg);
+  overflow: hidden;
+  background: var(--xocket-bg-secondary);
+  box-shadow: var(--xocket-shadow-sm);
+}
+
+.ag-theme-xocket {
+  --ag-font-family: var(--xocket-font-family-base);
+  --ag-font-size: 14px;
+  --ag-grid-size: 8px;
+  --ag-list-item-height: 42px;
+  --ag-row-height: 56px;
+  --ag-header-height: 56px;
+  --ag-background-color: #ffffff;
+  --ag-foreground-color: #111827;
+  --ag-secondary-foreground-color: #4b5563;
+  --ag-data-color: #111827;
+  --ag-header-background-color: #f8fafc;
+  --ag-header-foreground-color: #111827;
+  --ag-border-color: #dfe3ea;
+  --ag-row-border-color: #eef2f7;
+  --ag-odd-row-background-color: #ffffff;
+  --ag-row-hover-color: #eef6ff;
+  --ag-selected-row-background-color: #dcecff;
+  --ag-input-background-color: #ffffff;
+  --ag-input-border-color: #d1d5db;
+  --ag-input-focus-border-color: var(--xocket-primary-500);
+  --ag-icon-color: #4b5563;
+  --ag-alpine-active-color: var(--xocket-primary-500);
+  overflow: hidden;
+}
+
+:root[data-theme='dark'] .ag-theme-xocket {
+  --ag-background-color: #182233;
+  --ag-foreground-color: #e6edf7;
+  --ag-secondary-foreground-color: #b8c4d6;
+  --ag-data-color: #e6edf7;
+  --ag-header-background-color: #0f172a;
+  --ag-header-foreground-color: #f8fafc;
+  --ag-border-color: #334155;
+  --ag-row-border-color: #263449;
+  --ag-odd-row-background-color: #1c283a;
+  --ag-row-hover-color: #263a56;
+  --ag-selected-row-background-color: #1e4f86;
+  --ag-input-background-color: #111827;
+  --ag-input-border-color: #334155;
+  --ag-input-focus-border-color: #60a5fa;
+  --ag-icon-color: #dbeafe;
+}
+
+.ag-theme-xocket .ag-root-wrapper {
+  border: none;
+  background: var(--ag-background-color);
+}
+
+.ag-theme-xocket .ag-header,
+.ag-theme-xocket .ag-header-row,
+.ag-theme-xocket .ag-header-cell,
+.ag-theme-xocket .ag-header-group-cell {
+  background: var(--ag-header-background-color) !important;
+  color: var(--ag-header-foreground-color) !important;
+  font-weight: 800;
+  letter-spacing: 0.015em;
+}
+
+.ag-theme-xocket .ag-cell,
+.ag-theme-xocket .ag-full-width-row .ag-cell-wrapper.ag-row-group {
+  color: var(--ag-data-color) !important;
+  line-height: 56px;
+}
+
+.ag-theme-xocket .ag-row {
+  background: var(--ag-background-color) !important;
+  border-color: var(--ag-row-border-color) !important;
+}
+
+.ag-theme-xocket .ag-row-odd {
+  background: var(--ag-odd-row-background-color) !important;
+}
+
+.ag-theme-xocket .ag-row-hover,
+.ag-theme-xocket .ag-row:hover {
+  background: var(--ag-row-hover-color) !important;
+}
+
+.ag-theme-xocket .ag-row-selected,
+.ag-theme-xocket .ag-row-selected::before {
+  background: var(--ag-selected-row-background-color) !important;
+}
+
+.ag-theme-xocket .ag-header-cell-text,
+.ag-theme-xocket .ag-cell-value,
+.ag-theme-xocket .ag-group-value,
+.ag-theme-xocket .ag-filter-value,
+.ag-theme-xocket .ag-set-filter-item {
+  color: inherit !important;
+}
+
+.ag-theme-xocket .ag-icon,
+.ag-theme-xocket .ag-header-icon {
+  color: var(--ag-icon-color) !important;
+}
+
+.ag-theme-xocket .ag-paging-panel {
+  background: var(--ag-header-background-color);
+  color: var(--ag-header-foreground-color);
+  border-top: 1px solid var(--ag-border-color);
+}
+
+.ag-theme-xocket .ag-overlay-no-rows-wrapper,
+.ag-theme-xocket .enterprise-grid-empty {
+  color: var(--ag-secondary-foreground-color) !important;
+  font-weight: 700;
+}
+
+.ag-theme-xocket .xocket-status,
+.ag-theme-xocket .status-badge,
+.ag-theme-xocket .enterprise-status-badge {
+  line-height: 1;
+}
+
+
+/* EnterpriseGrid 3.1 density and interaction polish */
+.ag-theme-xocket .ag-cell {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  display: flex;
+  align-items: center;
+}
+
+.ag-theme-xocket .ag-header-cell {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+.ag-theme-xocket .ag-row-selected {
+  box-shadow: inset 4px 0 0 var(--xocket-primary-500);
+}
+
+.ag-theme-xocket .grid-primary-cell {
+  line-height: 1.3;
+}
+
+.ag-theme-xocket .grid-primary-cell strong,
+.ag-theme-xocket .grid-primary-cell span {
+  color: inherit !important;
+}
+
+.ag-theme-xocket .grid-actions-cell {
+  gap: 10px;
+}

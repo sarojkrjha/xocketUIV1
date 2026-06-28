@@ -1,0 +1,102 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Production build
+dist/
+build/
+
+# Vite
+.vite/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+*.lcov
+
+# Cache
+.cache/
+.eslintcache
+.stylelintcache
+
+# TypeScript
+*.tsbuildinfo
+
+# npm / pnpm / yarn
+.npm/
+.pnpm-store/
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Optional package manager lock files
+# Uncomment if your team uses only one package manager
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Temporary files
+tmp/
+temp/
+
+# Storybook
+storybook-static/
+
+# Playwright
+playwright-report/
+test-results/
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+
+# Generated files
+*.tgz
+
+# Local SSL certificates
+*.pem
+*.key
+certificates/
+
+# React DevTools
+.react-devtools
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Misc
+*.pid
+*.seed
