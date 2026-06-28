@@ -7,7 +7,8 @@
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint": "eslint .",
+    "lint": "eslint .", 
+    "start": "npx serve -s build -l 8080",
     "generate:api": "node ./scripts/generate-api-contract.mjs"
   },
   "dependencies": {
