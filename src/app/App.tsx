@@ -25,6 +25,7 @@ import { ProductionReadinessPage } from '@/features/readiness/pages/ProductionRe
 import { AccountSearchPage } from '@/features/accounts/pages/AccountSearchPage';
 import { AccountWorkspacePage } from '@/features/accounts/pages/AccountWorkspacePage';
 import type { AppRoute } from '@/shared/layout/navigation';
+import ArchitectureWalkthroughDemo from '@/features/demo/ArchitectureWalkthroughDemo';
 
 type WorkspaceState = {
   accountId?: number;
@@ -121,6 +122,11 @@ export function App() {
         return <AdministrationCenterPage />;
       case 'production-readiness':
         return <ProductionReadinessPage />;
+      
+        case 'demo-architecture': 
+          return<ArchitectureWalkthroughDemo />
+ 
+
       case 'accounts':
         if (workspace.accountId) {
           return (
@@ -133,6 +139,7 @@ export function App() {
         }
 
         return <AccountSearchPage onViewAccount={(accountId) => setWorkspace({ accountId })} />;
+        
       default:
         return <DashboardPlaceholderPage onNavigate={navigate} />;
     }

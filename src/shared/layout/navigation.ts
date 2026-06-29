@@ -36,7 +36,8 @@ export type AppRoute =
   | 'imports'
   | 'reporting'
   | 'administration'
-  | 'production-readiness';
+  | 'production-readiness'
+  | 'demo-architecture';
 
 export type NavigationItem = {
   route: AppRoute;
@@ -87,6 +88,12 @@ export const navigationSections: NavigationSection[] = [
     items: [
       { route: 'administration', label: 'Administration', icon: Building2 },
       { route: 'production-readiness', label: 'Production Readiness', icon: Rocket }
+    ]
+  },
+    {
+    title: 'Demo',
+    items: [ 
+      { route: 'demo-architecture', label: 'demo-architecture', icon: Rocket }
     ]
   }
 ];
@@ -163,5 +170,9 @@ export const routeTitles: Record<AppRoute, { title: string; subtitle: string }> 
   'production-readiness': {
     title: 'Production Readiness',
     subtitle: 'End-to-end workflow validation, backend gap register, smoke tests, and release gates'
+  } ,
+  'demo-architecture': {
+    title: 'Architecture Demo',
+    subtitle: 'End-to-end workflow '
   }
 };
