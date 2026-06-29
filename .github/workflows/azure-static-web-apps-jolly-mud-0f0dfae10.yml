@@ -16,7 +16,14 @@ jobs:
         with:
           node-version: 22
           cache: npm
-
+      - name: Debug
+        run: |
+          pwd
+          ls -lah
+          cat package.json
+          node -v
+          npm -v
+          
       - run: npm ci
 
       - run: npm run build
