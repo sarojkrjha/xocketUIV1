@@ -23,7 +23,9 @@ jobs:
           cat package.json
           node -v
           npm -v
-          
+      - name: Use public npm registry
+        run: npm config set registry https://registry.npmjs.org/    
+        
       - run: npm ci --verbose
 
       - run: npm run build
