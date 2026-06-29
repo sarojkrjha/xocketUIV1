@@ -28,10 +28,16 @@ jobs:
       
       - name: Clean npm cache
         run: npm cache clean --force
-      
+        
       - name: Install dependencies
-        run: npm install --include=dev --legacy-peer-deps
-      
+        run: npm ci --include=dev --legacy-peer-deps
+        env:
+          NODE_ENV: development
+        
+      - name: Build Vite app
+        run: npx vite build
+        env:
+          NODE_ENV: production  
       
       - name: Build Vite app
         run: npm run build
